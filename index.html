@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezantimi Im Personal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            color: #263248;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #93c5fd;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .hero {
+            min-height: 75vh;
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #e0e7ff, #f5f7fb);
+        }
+
+        .hero-text {
+            flex: 1 1 300px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(35px, 5vw, 52px);
+            color: #172554;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .hero-text h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            max-width: 560px;
+            margin-bottom: 25px;
+            color: #526078;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #172554;
+            transform: translateY(-2px);
+        }
+
+        .profile {
+            flex: 0 1 300px;
+            min-height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #dbeafe;
+            border: 6px solid white;
+            border-radius: 50%;
+            box-shadow: 0 10px 35px #17255420;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #172554;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #64748b;
+            margin: 0 auto 35px;
+            max-width: 650px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 22px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px #1725540b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card .icon {
+            font-size: 38px;
+        }
+
+        .card h3 {
+            color: #1d4ed8;
+            margin: 12px 0;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .goals {
+            background: #eaf0ff;
+        }
+
+        .contact {
+            text-align: center;
+            background: white;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 7px;
+                display: inline-block;
+            }
+
+            .hero {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .profile {
+                min-height: 230px;
+                flex-basis: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Portofoli Im.</h2>
+
+        <nav>
+            <a href="#home">Ballina</a>
+            <a href="#about">Rreth meje</a>
+            <a href="#skills">Aftësitë</a>
+            <a href="#goals">Synimet</a>
+            <a href="#contact">Kontakti</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h3>Përshëndetje, mirë se erdhe!</h3>
+
+            <h1>Jam një studente me pasion për teknologjinë.</h1>
+
+            <p>
+                Më pëlqen të mësoj gjëra të reja, të eksploroj
+                botën digjitale dhe të krijoj faqe interneti.
+                Kjo është hapësira ime personale ku mund të
+                njihesh më shumë me mua dhe interesat e mia.
+            </p>
+
+            <a href="#about" class="button">
+                Më njihe më shumë
+            </a>
+        </div>
+
+        <div class="profile" aria-label="Vend për fotografinë time">
+            👩‍💻
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">Rreth Meje</h2>
+
+        <p class="section-intro">
+            Një prezantim i shkurtër për personin që jam
+            dhe gjërat që më frymëzojnë.
+        </p>
+
+        <div class="about-content">
+            <p>
+                Jam studente dhe aktualisht jam duke mësuar
+                si të krijoj faqe interneti. Më pëlqen teknologjia,
+                sepse më jep mundësi të jem kreative dhe të
+                zhvilloj ide të reja.
+
+                Besoj se çdo ditë është një mundësi për të
+                mësuar diçka të vlefshme. Dua të përmirësoj
+                njohuritë e mia, të fitoj përvojë dhe të krijoj
+                projekte që pasqyrojnë kreativitetin tim.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Interesat e Mia</h2>
+
+        <p class="section-intro">
+            Disa nga fushat që më pëlqejnë dhe që dua
+            të eksploroj më shumë.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Teknologjia</h3>
+                <p>
+                    Më pëlqen të zbuloj teknologji të reja
+                    dhe të kuptoj se si funksionon bota digjitale.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Krijimi i faqeve</h3>
+                <p>
+                    Jam duke mësuar HTML dhe CSS për të
+                    ndërtuar faqe interneti të bukura dhe funksionale.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Kreativiteti</h3>
+                <p>
+                    Më pëlqen të provoj ide të reja, të kombinoj
+                    ngjyra dhe të krijoj dizajne interesante.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Të mësuarit</h3>
+                <p>
+                    Më pëlqen të zgjeroj njohuritë e mia
+                    dhe të zhvilloj aftësi të reja çdo ditë.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="goals" id="goals">
+        <h2 class="section-title">Synimet e Mia</h2>
+
+        <p class="section-intro">
+            Çdo fillim është një hap drejt suksesit.
+        </p>
+
+        <div class="about-content">
+            <p>
+                Synimi im është të përmirësoj njohuritë në
+                programim, të krijoj projekte personale dhe
+                të zhvillohem në fushën e teknologjisë.
+                Dua të fitoj përvojë, të sfidoj veten dhe
+                t'i kthej idetë e mia në projekte konkrete.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Faleminderit!</h2>
+
+        <p class="section-intro">
+            Faleminderit që vizitove faqen time personale.
+            Ky është vetëm fillimi i rrugëtimit tim në
+            botën e teknologjisë!
+        </p>
+
+        <a href="#home" class="button">
+            Kthehu në fillim ↑
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Portofoli Im | Krijuar me pasion 💙</p>
+    </footer>
+
+</body>
+</html>
